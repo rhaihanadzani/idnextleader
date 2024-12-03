@@ -5,7 +5,7 @@ const Banner = () => {
             <div
                 className="relative text-white text-center px-5 h-[70vh] flex flex-col items-center justify-center"
                 style={{
-                    backgroundImage: "url('/images/home/banner.png')",
+                    backgroundImage: "url('/images/home/bannerBOD1.png')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundAttachment: "fixed",
@@ -32,7 +32,7 @@ const Banner = () => {
             <div
                 className="relative h-60 bg-cover bg-center w-full"
                 style={{
-                    backgroundImage: "url('/images/home/banner.png')",
+                    backgroundImage: "url('/images/home/bannerBOD1.png')",
                     WebkitMaskImage: "url('/images/home/test.svg')",
                     maskImage: "url('/images/home/test.svg')",
                     maskSize: "cover",
