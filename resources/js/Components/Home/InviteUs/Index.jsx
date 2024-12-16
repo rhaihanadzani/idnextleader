@@ -1,6 +1,6 @@
 const InviteUs = () => {
     return (
-        <section>
+        <section id="contact">
             <div className="py-12 flex justify-center flex-col px-4 w-full">
                 <h3 className="text-center text-2xl md:text-4xl font-bold">
                     Tertarik untuk membangun{" "}

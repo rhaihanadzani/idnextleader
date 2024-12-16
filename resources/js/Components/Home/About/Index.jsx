@@ -1,6 +1,9 @@
 const About = () => {
     return (
-        <div className="flex flex-col md:flex-row items-center gap-8 p-6 max-w-5xl mx-auto ">
+        <div
+            className="flex flex-col md:flex-row items-center gap-8 p-6 max-w-5xl mx-auto"
+            id="about"
+        >
             {/* Bagian Gambar */}
             <div className="flex-shrink-0 ">
                 <img
@@ -13,15 +16,20 @@ const About = () => {
             {/* Bagian Keterangan */}
             <div className="text-center md:text-left">
                 <h2 className="text-2xl font-bold text-primary mb-4">
-                    Indonesian Next Leader
+                    Indonesia Next Leader: Connecting Impactful Leaders
                 </h2>
-                <p className="text-dark leading-relaxed text-sm md:text-base">
-                    Jejaring pemimpin masa depan berbentuk Yayasan Pemimpin Masa
-                    Depan. Organisasi ini menjadi wadah bagi generasi muda
-                    potensial untuk mengembangkan jejaring, memberdayakan diri,
-                    dan membangun ekosistem pemimpin masa depan. ID Next Leader
-                    bertujuan mencetak penggerak perubahan yang berdampak nyata
-                    pada pembangunan daerah hingga tingkat nasional.
+                <p className="text-dark leading-relaxed text-sm ">
+                    Indonesia Next Leader adalah komunitas yang diinisiasi oleh
+                    Yayasan Pemimpin Masa Depan sebagai wadah bagi generasi muda
+                    penuh potensi. Kami hadir untuk mendukung pengembangan diri,
+                    membangun koneksi strategis, dan memberdayakan pemimpin masa
+                    depan yang inovatif, tangguh, dan visioner. Dengan semangat
+                    menciptakan perubahan yang bermakna, Indonesia Next Leader
+                    menjadi ruang kolaborasi dan inspirasi bagi mereka yang
+                    ingin membawa dampak positif di berbagai bidang.
+                    Bergabunglah dengan kami dan jadilah bagian dari komunitas
+                    yang siap mencetak sejarah untuk masa depan Indonesia yang
+                    lebih cerah.
                 </p>
             </div>
         </div>

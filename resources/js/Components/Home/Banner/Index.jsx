@@ -13,7 +13,7 @@ const Banner = () => {
                 }}
             >
                 {/* Overlay Gelap */}
-                <div className="absolute inset-0 bg-black opacity-70"></div>
+                <div className="absolute inset-0 bg-black opacity-50"></div>
 
                 <div className="relative z-10 text-center md:text-left w-full h-full  md:items-start flex flex-col  items-center lg:justify-end justify-center  ">
                     <h1 className="text-4xl font-bold">ID Next Leader</h1>
@@ -22,9 +22,12 @@ const Banner = () => {
                         pengguna Anda.Platform software kami menciptakan
                         pengalaman mulus bagi pengguna Anda.
                     </p>
-                    <button className="mt-4 bg-white text-red-800 px-4 py-2 rounded-full">
-                        Mulai Sekarang
-                    </button>
+                    <a
+                        href="/article"
+                        className="mt-4 bg-white text-red-800 font-semibold px-4 py-2 rounded-full"
+                    >
+                        lihat Artikel Kami
+                    </a>
                 </div>
             </div>
 
@@ -42,7 +45,7 @@ const Banner = () => {
                 }}
             >
                 {/* Overlay Gelap di Wave */}
-                <div className="absolute inset-0 bg-black opacity-70 w-full"></div>
+                <div className="absolute inset-0 bg-black opacity-50 w-full"></div>
             </div>
         </div>
     );

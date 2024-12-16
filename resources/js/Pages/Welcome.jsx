@@ -15,6 +15,7 @@ import HomeNavbar from "@/Components/layouts/Navbar/HomeNavbar";
 import { Link, Head } from "@inertiajs/react";
 
 export default function Welcome(props) {
+    // console.log(props.feedback);
     return (
         <>
             <HomeNavbar>
@@ -23,11 +24,11 @@ export default function Welcome(props) {
                 <About />
                 <Tujuan />
                 <NilaiSection />
-                <AcaraSection />
+                <AcaraSection acaraItems={props.event} />
                 <EcosystemSection />
-                <TeamSection />
-                <MitraKolaborator />
-                <Testimonials />
+                <TeamSection teamMembers={props.team} />
+                <MitraKolaborator mitraList={props.collaboration} />
+                <Testimonials testimonials={props.feedback} />
                 <InviteUs />
                 <HomeFooter />
             </HomeNavbar>

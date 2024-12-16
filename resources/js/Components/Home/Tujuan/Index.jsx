@@ -6,24 +6,22 @@ const TujuanSection = () => {
             icon: <FaUserCircle className="text-primary text-4xl mb-4" />,
             title: "Kesadaran Diri",
             description: `
-        Pemimpin yang mampu mengenali kekuatan, kelemahan, dan nilai-nilai diri,
-        serta memanfaatkan potensi untuk pengembangan personal dan profesional.
+        Mendorong setiap pemimpin dibentuk dari dalam diri dahulu yakni dengan mengenali potensi diri, membangun karakter autentik, dan memimpin dengan integritas.
       `,
         },
         {
             icon: <FaUsers className="text-primary text-4xl mb-4" />,
             title: "Kemampuan Memimpin",
             description: `
-        Pemimpin yang dapat menginspirasi dan memengaruhi kelompok untuk bekerja
-        menuju tujuan bersama dengan nilai-nilai kepemimpinan yang kuat.
+      Menciptakan pemimpin yang mampu menginspirasi, memberdayakan, dan memotivasi orang lain untuk bergerak bersama menuju perubahan.
       `,
         },
         {
             icon: <FaHandsHelping className="text-primary text-4xl mb-4" />,
-            title: "Berdampak",
+            title: "Berdampak Berkelanjutan",
             description: `
-        Pemimpin yang mampu memberikan manfaat berkelanjutan kepada masyarakat
-        dengan solusi berbasis masalah sosial dan memberdayakan generasi berikutnya.
+       Mendorong terciptanya pemimpin dengan inisiatif yang berkelanjutan untuk menghasilkan dampak positif jangka panjang bagi komunitas dan lingkungan.
+
       `,
         },
     ];

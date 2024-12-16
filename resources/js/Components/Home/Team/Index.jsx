@@ -8,60 +8,62 @@ import "swiper/css/navigation";
 
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
-const TeamSection = () => {
-    const teamMembers = [
-        {
-            id: 1,
-            name: "Emma Smith",
-            position: "Product Manager",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-            photo: "/images/home/team/1.jpg",
-            socials: {
-                linkedin: "https://www.linkedin.com",
-                facebook: "https://www.facebook.com",
-                instagram: "https://www.instagram.com",
-            },
-        },
-        {
-            id: 2,
-            name: "John Doe",
-            position: "Tech Lead",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-            photo: "https://via.placeholder.com/150",
-            socials: {
-                linkedin: "https://www.linkedin.com",
-                facebook: "https://www.facebook.com",
-                instagram: "https://www.instagram.com",
-            },
-        },
-        {
-            id: 3,
-            name: "Ashley Ross",
-            position: "Frontend Developer",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-            photo: "https://via.placeholder.com/150",
-            socials: {
-                linkedin: "https://www.linkedin.com",
-                facebook: "https://www.facebook.com",
-                instagram: "https://www.instagram.com",
-            },
-        },
-        {
-            id: 4,
-            name: "Bruce Rogers",
-            position: "Backend Developer",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-            photo: "https://via.placeholder.com/150",
-            socials: {
-                linkedin: "https://www.linkedin.com",
-                facebook: "https://www.facebook.com",
-            },
-        },
-    ];
+const TeamSection = ({ teamMembers }) => {
+    const url = import.meta.env.VITE_CMS_URL;
+
+    // const teamMembers = [
+    //     {
+    //         id: 1,
+    //         name: "Emma Smith",
+    //         position: "Product Manager",
+    //         description:
+    //             "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    //         photo: "/images/home/team/1.jpg",
+    //         socials: {
+    //             linkedin: "https://www.linkedin.com",
+    //             facebook: "https://www.facebook.com",
+    //             instagram: "https://www.instagram.com",
+    //         },
+    //     },
+    //     {
+    //         id: 2,
+    //         name: "John Doe",
+    //         position: "Tech Lead",
+    //         description:
+    //             "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    //         photo: "https://via.placeholder.com/150",
+    //         socials: {
+    //             linkedin: "https://www.linkedin.com",
+    //             facebook: "https://www.facebook.com",
+    //             instagram: "https://www.instagram.com",
+    //         },
+    //     },
+    //     {
+    //         id: 3,
+    //         name: "Ashley Ross",
+    //         position: "Frontend Developer",
+    //         description:
+    //             "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    //         photo: "https://via.placeholder.com/150",
+    //         socials: {
+    //             linkedin: "https://www.linkedin.com",
+    //             facebook: "https://www.facebook.com",
+    //             instagram: "https://www.instagram.com",
+    //         },
+    //     },
+    //     {
+    //         id: 4,
+    //         name: "Bruce Rogers",
+    //         position: "Backend Developer",
+    //         description:
+    //             "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    //         photo: "https://via.placeholder.com/150",
+    //         socials: {
+    //             linkedin: "https://www.linkedin.com",
+    //             facebook: "https://www.facebook.com",
+    //         },
+    //     },
+    // ];
 
     return (
         <section className="py-16 bg-gradient-to-br from-dark to-darkRed">
@@ -99,31 +101,28 @@ const TeamSection = () => {
                                 <div className="flex justify-center flex-row ">
                                     <div className="bg-white/30 backdrop-blur-md border border-white/20 rounded-lg shadow-lg p-6 text-center flex flex-col items-center relative w-[300px] h-auto mt-14">
                                         {/* Foto Anggota */}
-                                        <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-darkRed bg-white absolute -top-12">
+                                        <div className="w-24 bg-red-200 h-24 rounded-full overflow-hidden border-2 border-darkRed  absolute -top-12">
                                             <img
-                                                src={member.photo}
+                                                src={`${url}storage/${member.image}`}
                                                 alt={member.name}
-                                                className="w-full h-full object-cover"
+                                                className="w-full bg-red-300 h-full object-cover"
                                             />
                                         </div>
                                         <div className="mt-8">
                                             {/* Nama */}
-                                            <h3 className="text-lg font-bold text-white mb-1">
+                                            <h3 className="text-lg font-bold text-white mb-1 capitalize">
                                                 {member.name}
                                             </h3>
                                             {/* Jabatan */}
-                                            <p className="text-white text-sm font-medium mb-3">
+                                            <p className="text-white text-sm font-medium mb-3 capitalize">
                                                 {member.position}
                                             </p>
 
                                             {/* Social Media */}
                                             <div className="flex justify-center gap-4 mt-4">
-                                                {member.socials.linkedin && (
+                                                {member.linkedin && (
                                                     <a
-                                                        href={
-                                                            member.socials
-                                                                .linkedin
-                                                        }
+                                                        href={member.linkedin}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         className="text-gray-300 hover:text-darkRed transition-colors"
@@ -131,12 +130,9 @@ const TeamSection = () => {
                                                         <FaLinkedin size={20} />
                                                     </a>
                                                 )}
-                                                {member.socials.facebook && (
+                                                {member.facebook && (
                                                     <a
-                                                        href={
-                                                            member.socials
-                                                                .facebook
-                                                        }
+                                                        href={member.facebook}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         className="text-gray-300 hover:text-darkRed transition-colors"
@@ -144,12 +140,9 @@ const TeamSection = () => {
                                                         <FaFacebook size={20} />
                                                     </a>
                                                 )}
-                                                {member.socials.instagram && (
+                                                {member.instagram && (
                                                     <a
-                                                        href={
-                                                            member.socials
-                                                                .instagram
-                                                        }
+                                                        href={member.instagram}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         className="text-gray-300 hover:text-darkRed transition-colors"

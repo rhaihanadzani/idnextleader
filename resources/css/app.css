@@ -126,3 +126,98 @@
         font-family: "Poppins", sans-serif;
     }
 }
+
+.content h1,
+.content h2 {
+    font-family: "Arial", sans-serif; /* Atur font keluarga */
+    font-weight: bold; /* Pastikan judul memiliki ketebalan huruf */
+    color: #333; /* Sesuaikan warna teks */
+    margin-bottom: 1rem; /* Spasi bawah untuk h1 dan h2 */
+}
+
+.content h1 {
+    font-size: 2.5rem; /* Ukuran font untuk h1 */
+}
+
+.content h2 {
+    font-size: 2rem; /* Ukuran font untuk h2 */
+}
+
+.content p {
+    /* Font untuk paragraf */
+    font-size: 1rem; /* Ukuran font paragraf */
+    line-height: 1.6; /* Jarak antar baris paragraf */
+    color: #000000; /* Warna teks paragraf */
+    margin-bottom: 1rem; /* Spasi bawah paragraf */
+}
+
+.content i {
+    font-style: italic; /* Membuat teks menjadi miring */
+    color: #666; /* Warna teks italic */
+}
+
+.content u {
+    text-decoration: underline; /* Membuat teks bergaris bawah */
+    color: #007bff; /* Warna untuk teks yang digarisbawahi */
+}
+
+.content b,
+.content strong {
+    font-weight: bold; /* Membuat teks bold */
+    color: #000; /* Warna teks bold */
+}
+
+/* Unordered List (daftar tidak terurut) */
+.content ul {
+    list-style-type: disc; /* Gunakan titik sebagai bullet point */
+    margin-left: 20px; /* Memberikan jarak kiri untuk ul */
+    padding-left: 1rem; /* Memberikan padding agar lebih rapi */
+}
+
+.content ul li {
+    font-size: 1rem; /* Ukuran font item dalam ul */
+    margin-bottom: 0.5rem; /* Jarak antar item di ul */
+}
+
+/* Ordered List (daftar terurut) */
+.content ol {
+    list-style-type: decimal; /* Gunakan angka untuk daftar terurut */
+    margin-left: 20px; /* Memberikan jarak kiri untuk ol */
+    padding-left: 1rem; /* Memberikan padding agar lebih rapi */
+}
+
+.content ol li {
+    font-size: 1rem; /* Ukuran font item dalam ol */
+    margin-bottom: 0.5rem; /* Jarak antar item di ol */
+}
+
+/* Menambahkan styling untuk sublist (daftar dalam daftar) */
+.content ul ul,
+.content ol ol,
+.content ul ol,
+.content ol ul {
+    margin-left: 20px; /* Memberikan jarak lebih dalam untuk sublist */
+}
+
+/* Menambahkan styling untuk list item yang menggunakan bold atau italic */
+.content ul li b,
+.content ol li b,
+.content ul li i,
+.content ol li i {
+    font-weight: bold; /* Menebalkan teks dalam list item */
+    font-style: italic; /* Menambahkan style italic pada teks dalam list item */
+}
+
+/* Hover efek untuk list items */
+.content ul li:hover,
+.content ol li:hover {
+    background-color: #f0f0f0; /* Background saat hover pada item list */
+    cursor: pointer; /* Ubah cursor saat hover */
+    padding-left: 10px; /* Memberikan efek geser ke kiri saat hover */
+    transition: all 0.3s ease; /* Transisi smooth */
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}

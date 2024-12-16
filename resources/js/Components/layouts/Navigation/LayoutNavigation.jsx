@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import HomeFooter from "../Footer/HomeFooter";
 
-const HomeNavbar = ({ children }) => {
+const LayoutNavigation = ({ children, tittle, description }) => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -65,13 +66,13 @@ const HomeNavbar = ({ children }) => {
                 </div>
                 <nav className="mt-4">
                     <a
-                        href="#about"
+                        href="/#about"
                         className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
                     >
                         About
                     </a>
                     <a
-                        href="#event"
+                        href="/#event"
                         className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
                     >
                         Event
@@ -83,7 +84,7 @@ const HomeNavbar = ({ children }) => {
                         Article
                     </a>
                     <a
-                        href="#contact"
+                        href="/#contact"
                         className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
                     >
                         Contact
@@ -99,7 +100,7 @@ const HomeNavbar = ({ children }) => {
             )}
             {/* Main Content */}
             <div className="flex-1">
-                {/* Sticky HomeNavbar */}
+                {/* Sticky LayoutNavigation */}
                 <div
                     className={`${
                         isScrolled ? "bg-white shadow-md" : "bg-transparent "
@@ -164,7 +165,7 @@ const HomeNavbar = ({ children }) => {
                     />
                     <nav className="space-x-4">
                         <a
-                            href="#about"
+                            href="/#about"
                             className={`${
                                 isScrolled
                                     ? "text-darkRed hover:text-darkRed/80 font-semibold"
@@ -174,7 +175,7 @@ const HomeNavbar = ({ children }) => {
                             About
                         </a>
                         <a
-                            href="#event"
+                            href="/#event"
                             className={`${
                                 isScrolled
                                     ? "text-darkRed hover:text-darkRed/80 font-semibold"
@@ -194,7 +195,7 @@ const HomeNavbar = ({ children }) => {
                             Article
                         </a>
                         <a
-                            href="#contact"
+                            href="/#contact"
                             className={`${
                                 isScrolled
                                     ? "text-darkRed hover:text-darkRed/80 font-semibold"
@@ -207,10 +208,59 @@ const HomeNavbar = ({ children }) => {
                 </div>
 
                 {/* Children */}
-                <div className="space-y-4">{children}</div>
+                <div className="space-y-4">
+                    <div className="bg-white">
+                        {/* Bagian Hero */}
+                        <div
+                            className="relative text-white text-center px-5 h-[70vh] flex flex-col items-center justify-center"
+                            style={{
+                                backgroundImage:
+                                    "url('/images/home/bannerBOD1.png')",
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                backgroundAttachment: "fixed",
+                                backgroundRepeat: "no-repeat",
+                            }}
+                        >
+                            {/* Overlay Gelap */}
+                            <div className="absolute inset-0 bg-black opacity-70"></div>
+
+                            <div className="relative z-10 text-center md:text-left w-full h-full  md:items-center flex flex-col  items-center lg:justify-center justify-center space-y-5">
+                                <h1 className="text-4xl font-bold uppercase">
+                                    {tittle}
+                                </h1>
+                                <p className="max-w-3xl text-center">
+                                    {description}
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Gambar dengan Masking Wave */}
+                        <div
+                            className="relative h-60 bg-cover bg-center w-full"
+                            style={{
+                                backgroundImage:
+                                    "url('/images/home/bannerBOD1.png')",
+                                WebkitMaskImage: "url('/images/home/test.svg')",
+                                maskImage: "url('/images/home/test.svg')",
+                                maskSize: "cover",
+                                WebkitMaskSize: "cover",
+                                backgroundPosition: "center",
+                                backgroundAttachment: "fixed",
+                            }}
+                        >
+                            {/* Overlay Gelap di Wave */}
+                            <div className="absolute inset-0 bg-black opacity-70 w-full"></div>
+                        </div>
+                    </div>
+                    {children}
+                    <div>
+                        <HomeFooter />
+                    </div>
+                </div>
             </div>
         </div>
     );
 };
 
-export default HomeNavbar;
+export default LayoutNavigation;

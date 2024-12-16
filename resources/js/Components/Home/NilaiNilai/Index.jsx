@@ -11,33 +11,23 @@ const NilaiSection = () => {
             icon: <FaLightbulb className="text-primary text-5xl" />,
             title: "Ideas",
             description: `
-                Mendorong pemimpin masa depan menciptakan ide-ide kreatif
-                dan inovatif yang berkontribusi pada kemajuan Indonesia,
-                serta mewujudkannya menjadi perubahan positif.
+                Pemimpin ID Next Leader hadir dengan ide-ide segar dan kreatif untuk kemajuan Indonesia, didukung ruang kolaborasi yang terbuka bagi anak muda untuk berkarya.
             `,
         },
         {
             icon: <FaHandsHelping className="text-primary text-5xl" />,
             title: "Collaboration",
             description: `
-                Mengutamakan kolaborasi di atas kompetisi, menciptakan lingkungan
-                suportif dan inklusif untuk merealisasikan ide-ide kreatif bersama.
+                Mengutamakan kolaborasi di atas kompetisi, bersama merealisasikan ide-ide kreatif demi Indonesia yang lebih baik.
             `,
         },
-        {
-            icon: <FaLeaf className="text-primary text-5xl" />,
-            title: "Sustainability",
-            description: `
-                Mengedepankan keberlanjutan untuk memastikan kesejahteraan
-                jangka panjang bagi lingkungan, yayasan, dan bangsa.
-            `,
-        },
+
         {
             icon: <FaChartLine className="text-primary text-5xl" />,
             title: "Impact",
             description: `
-                Memberikan dampak nyata bagi masyarakat melalui aksi kolaboratif
-                yang menciptakan pengaruh positif bagi individu dan komunitas.
+               Melahirkan pemimpin yang membawa manfaat nyata bagi lingkungan dan masyarakat.
+
             `,
         },
     ];
@@ -47,7 +37,7 @@ const NilaiSection = () => {
             <h2 className="text-3xl font-bold text-white mb-12 text-center">
                 Nilai-Nilai ID Next Leader
             </h2>
-            <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {/* Timeline Garis */}
                 <div className="absolute hidden lg:block left-0 right-0 h-1 bg-white top-[50%] -translate-y-1/2"></div>
                 {/* Elemen Nilai */}
@@ -61,11 +51,12 @@ const NilaiSection = () => {
                             {item.icon}
                         </div>
                         {/* Judul */}
-                        <h3 className="text-lg font-semibold text-white mb-4">
+                        <h3 className="text-lg font-semibold uppercase  text-white mb-4">
                             {item.title}
                         </h3>
+                        <div className="h-[1px] w-full bg-white " />
                         {/* Deskripsi */}
-                        <p className="text-[11px] text-white mt-2 leading-relaxed">
+                        <p className="text-[13px] text-white mt-2 leading-relaxed">
                             {item.description}
                         </p>
                     </div>
