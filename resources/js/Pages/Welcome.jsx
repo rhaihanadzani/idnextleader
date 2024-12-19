@@ -18,6 +18,7 @@ export default function Welcome(props) {
     // console.log(props.feedback);
     return (
         <>
+            <Head title="Home" />
             <HomeNavbar>
                 <Banner />
                 {/* <Agenda /> */}

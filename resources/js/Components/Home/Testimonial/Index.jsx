@@ -110,7 +110,7 @@ const Testimonials = ({ testimonials }) => {
                                     </div>
                                 </div>
                                 {/* Isi Testimonial */}
-                                <p className="text-gray-300">
+                                <p className="text-gray-300 text-[0.7rem] xl:text-[0.8rem]">
                                     {testimonial.message}
                                 </p>
                             </div>

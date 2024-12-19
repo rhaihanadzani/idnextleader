@@ -68,25 +68,25 @@ const HomeNavbar = ({ children }) => {
                         href="#about"
                         className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
                     >
-                        About
+                        Tentang Kami
                     </a>
                     <a
                         href="#event"
                         className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
                     >
-                        Event
+                        Acara
                     </a>
                     <a
                         href="/article"
                         className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
                     >
-                        Article
+                        Artikel
                     </a>
                     <a
                         href="#contact"
                         className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
                     >
-                        Contact
+                        Kontak
                     </a>
                 </nav>
             </div>
@@ -105,20 +105,22 @@ const HomeNavbar = ({ children }) => {
                         isScrolled ? "bg-white shadow-md" : "bg-transparent "
                     } p-4 flex justify-between items-center md:hidden fixed w-full top-0 z-40 transition-colors duration-300`}
                 >
-                    <img
-                        src={"/images/partial/logo2.png"}
-                        alt="logo"
-                        width={100}
-                        height={100}
-                        className={`${isScrolled ? "hidden" : "block"}`}
-                    />
-                    <img
-                        src={"/images/partial/logo1.png"}
-                        alt="logo"
-                        width={100}
-                        height={100}
-                        className={`${isScrolled ? "block" : "hidden"}`}
-                    />
+                    <button onClick={() => (window.location.href = "/")}>
+                        <img
+                            src={"/images/partial/logo2.png"}
+                            alt="logo"
+                            width={100}
+                            height={100}
+                            className={`${isScrolled ? "hidden" : "block"}`}
+                        />
+                        <img
+                            src={"/images/partial/logo1.png"}
+                            alt="logo"
+                            width={100}
+                            height={100}
+                            className={`${isScrolled ? "block" : "hidden"}`}
+                        />
+                    </button>
                     <button
                         onClick={toggleSidebar}
                         className="text-gray-800 focus:outline-none"
@@ -143,7 +145,7 @@ const HomeNavbar = ({ children }) => {
                         </svg>
                     </button>
                 </div>
-                <div
+                <button
                     className={`${
                         isScrolled ? "bg-white shadow-md" : "bg-transparent"
                     } hidden md:flex justify-between items-center p-4 fixed w-full top-0 z-40 transition-colors duration-300`}
@@ -171,7 +173,7 @@ const HomeNavbar = ({ children }) => {
                                     : "text-white hover:text-white/80 font-semibold"
                             }`}
                         >
-                            About
+                            Tentang Kami
                         </a>
                         <a
                             href="#event"
@@ -181,7 +183,7 @@ const HomeNavbar = ({ children }) => {
                                     : "text-white hover:text-white/80 font-semibold"
                             }`}
                         >
-                            Event
+                            Acara
                         </a>
                         <a
                             href="/article"
@@ -191,7 +193,7 @@ const HomeNavbar = ({ children }) => {
                                     : "text-white hover:text-white/80 font-semibold"
                             }`}
                         >
-                            Article
+                            Artikel
                         </a>
                         <a
                             href="#contact"
@@ -201,10 +203,10 @@ const HomeNavbar = ({ children }) => {
                                     : "text-white hover:text-white/80 font-semibold"
                             }`}
                         >
-                            Contact
+                            Kontak
                         </a>
                     </nav>
-                </div>
+                </button>
 
                 {/* Children */}
                 <div className="space-y-4">{children}</div>

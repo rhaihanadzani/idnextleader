@@ -69,25 +69,25 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                         href="/#about"
                         className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
                     >
-                        About
+                        Tentang Kami
                     </a>
                     <a
                         href="/#event"
                         className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
                     >
-                        Event
+                        Acara
                     </a>
                     <a
                         href="/article"
                         className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
                     >
-                        Article
+                        Artikel
                     </a>
                     <a
                         href="/#contact"
                         className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
                     >
-                        Contact
+                        Kontak
                     </a>
                 </nav>
             </div>
@@ -106,20 +106,22 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                         isScrolled ? "bg-white shadow-md" : "bg-transparent "
                     } p-4 flex justify-between items-center md:hidden fixed w-full top-0 z-40 transition-colors duration-300`}
                 >
-                    <img
-                        src={"/images/partial/logo2.png"}
-                        alt="logo"
-                        width={100}
-                        height={100}
-                        className={`${isScrolled ? "hidden" : "block"}`}
-                    />
-                    <img
-                        src={"/images/partial/logo1.png"}
-                        alt="logo"
-                        width={100}
-                        height={100}
-                        className={`${isScrolled ? "block" : "hidden"}`}
-                    />
+                    <button>
+                        <img
+                            src={"/images/partial/logo2.png"}
+                            alt="logo"
+                            width={100}
+                            height={100}
+                            className={`${isScrolled ? "hidden" : "block"}`}
+                        />
+                        <img
+                            src={"/images/partial/logo1.png"}
+                            alt="logo"
+                            width={100}
+                            height={100}
+                            className={`${isScrolled ? "block" : "hidden"}`}
+                        />
+                    </button>
                     <button
                         onClick={toggleSidebar}
                         className="text-gray-800 focus:outline-none"
@@ -144,7 +146,7 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                         </svg>
                     </button>
                 </div>
-                <div
+                <button
                     className={`${
                         isScrolled ? "bg-white shadow-md" : "bg-transparent"
                     } hidden md:flex justify-between items-center p-4 fixed w-full top-0 z-40 transition-colors duration-300`}
@@ -172,7 +174,7 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                                     : "text-white hover:text-white/80 font-semibold"
                             }`}
                         >
-                            About
+                            Tentang Kami
                         </a>
                         <a
                             href="/#event"
@@ -182,7 +184,7 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                                     : "text-white hover:text-white/80 font-semibold"
                             }`}
                         >
-                            Event
+                            Acara
                         </a>
                         <a
                             href="/article"
@@ -192,7 +194,7 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                                     : "text-white hover:text-white/80 font-semibold"
                             }`}
                         >
-                            Article
+                            Artikel
                         </a>
                         <a
                             href="/#contact"
@@ -202,10 +204,10 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                                     : "text-white hover:text-white/80 font-semibold"
                             }`}
                         >
-                            Contact
+                            Kontak
                         </a>
                     </nav>
-                </div>
+                </button>
 
                 {/* Children */}
                 <div className="space-y-4">
@@ -223,7 +225,7 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                             }}
                         >
                             {/* Overlay Gelap */}
-                            <div className="absolute inset-0 bg-black opacity-70"></div>
+                            <div className="absolute inset-0 bg-black opacity-50"></div>
 
                             <div className="relative z-10 text-center md:text-left w-full h-full  md:items-center flex flex-col  items-center lg:justify-center justify-center space-y-5">
                                 <h1 className="text-4xl font-bold uppercase">
@@ -250,7 +252,7 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                             }}
                         >
                             {/* Overlay Gelap di Wave */}
-                            <div className="absolute inset-0 bg-black opacity-70 w-full"></div>
+                            <div className="absolute inset-0 bg-black opacity-50 w-full"></div>
                         </div>
                     </div>
                     {children}

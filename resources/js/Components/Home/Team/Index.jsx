@@ -114,7 +114,7 @@ const TeamSection = ({ teamMembers }) => {
                                                 {member.name}
                                             </h3>
                                             {/* Jabatan */}
-                                            <p className="text-white text-sm font-medium mb-3 capitalize">
+                                            <p className="text-white text-[10px] font-medium mb-3 capitalize">
                                                 {member.position}
                                             </p>
 

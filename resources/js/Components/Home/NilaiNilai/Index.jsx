@@ -9,14 +9,14 @@ const NilaiSection = () => {
     const nilaiItems = [
         {
             icon: <FaLightbulb className="text-primary text-5xl" />,
-            title: "Ideas",
+            title: "Ide",
             description: `
                 Pemimpin ID Next Leader hadir dengan ide-ide segar dan kreatif untuk kemajuan Indonesia, didukung ruang kolaborasi yang terbuka bagi anak muda untuk berkarya.
             `,
         },
         {
             icon: <FaHandsHelping className="text-primary text-5xl" />,
-            title: "Collaboration",
+            title: "Kolaborasi",
             description: `
                 Mengutamakan kolaborasi di atas kompetisi, bersama merealisasikan ide-ide kreatif demi Indonesia yang lebih baik.
             `,
@@ -24,7 +24,7 @@ const NilaiSection = () => {
 
         {
             icon: <FaChartLine className="text-primary text-5xl" />,
-            title: "Impact",
+            title: "Dampak",
             description: `
                Melahirkan pemimpin yang membawa manfaat nyata bagi lingkungan dan masyarakat.
 
@@ -56,7 +56,7 @@ const NilaiSection = () => {
                         </h3>
                         <div className="h-[1px] w-full bg-white " />
                         {/* Deskripsi */}
-                        <p className="text-[13px] text-white mt-2 leading-relaxed">
+                        <p className="text-[13px] lg:text-[15px] text-white mt-2 leading-relaxed">
                             {item.description}
                         </p>
                     </div>

@@ -13,9 +13,11 @@ const InviteUs = () => {
                     Dapatkan banyak manfaat dari menyelenggarakan acara bersama!
                 </p>
                 <div className="flex justify-center">
-                    <button className="bg-gradient-to-br from-dark to bg-darkRed text-white border border-white px-4 py-2 rounded-full">
-                        Hubungi Kami
-                    </button>
+                    <a href="https://wa.me/6282134224947" target="_blank">
+                        <div className="bg-gradient-to-br from-dark to bg-darkRed text-white border border-white px-4 py-2 rounded-full">
+                            Hubungi Kami
+                        </div>
+                    </a>
                 </div>
             </div>
 

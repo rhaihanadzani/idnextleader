@@ -24,9 +24,9 @@ const Banner = () => {
                     </p>
                     <a
                         href="/article"
-                        className="mt-4 bg-white text-red-800 font-semibold px-4 py-2 rounded-full"
+                        className="mt-4 border-2 border-white text-white font-semibold px-4 py-2 rounded-full hover:bg-darkRed hover:text-white transition-all duration-300"
                     >
-                        lihat Artikel Kami
+                        Lihat Artikel Kami
                     </a>
                 </div>
             </div>
