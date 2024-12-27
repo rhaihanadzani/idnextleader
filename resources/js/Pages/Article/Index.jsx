@@ -11,7 +11,7 @@ const Index = ({ articles }) => {
             <LayoutNavigation
                 tittle={"Artikel Kami"}
                 description={
-                    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas maxime libero inventore quibusdam enim illum, vel dicta rerum perspiciatis incidunt."
+                    "Temukan wawasan, inspirasi, dan solusi praktis seputar kepemimpinan dan pengembangan diri untuk membentuk generasi pemimpin masa depan Indonesia."
                 }
             >
                 <div className="w-full px-4 lg:flex justify-between ">

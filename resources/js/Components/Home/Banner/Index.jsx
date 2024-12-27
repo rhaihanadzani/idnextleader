@@ -5,7 +5,7 @@ const Banner = () => {
             <div
                 className="relative text-white text-center px-5 h-[70vh] flex flex-col items-center justify-center"
                 style={{
-                    backgroundImage: "url('/images/home/bannerBOD1.png')",
+                    backgroundImage: "url('/images/home/pasFLF3.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundAttachment: "fixed",
@@ -13,14 +13,17 @@ const Banner = () => {
                 }}
             >
                 {/* Overlay Gelap */}
-                <div className="absolute inset-0 bg-black opacity-50"></div>
+                <div className="absolute inset-0 bg-black opacity-40"></div>
 
                 <div className="relative z-10 text-center md:text-left w-full h-full  md:items-start flex flex-col  items-center lg:justify-end justify-center  ">
                     <h1 className="text-4xl font-bold">ID Next Leader</h1>
                     <p className="mt-2 md:w-[70%] lg:w-1/2 ">
-                        Platform software kami menciptakan pengalaman mulus bagi
-                        pengguna Anda.Platform software kami menciptakan
-                        pengalaman mulus bagi pengguna Anda.
+                        Jejaring pemimpin masa depan yang didirikan pada 10
+                        November 2019 di Jakarta dengan visi "Connecting
+                        Impactfull Leaders". Bertujuan mengidentifikasi,
+                        memupuk, dan menghubungkan anak muda menjadi ekosistem
+                        pemimpin masa depan yang mampu memberikan dampak nyata
+                        dalam membangun daerah hingga tingkat nasional.
                     </p>
                     <a
                         href="/article"
@@ -35,7 +38,7 @@ const Banner = () => {
             <div
                 className="relative h-60 bg-cover bg-center w-full"
                 style={{
-                    backgroundImage: "url('/images/home/bannerBOD1.png')",
+                    backgroundImage: "url('/images/home/pasFLF3.jpg')",
                     WebkitMaskImage: "url('/images/home/test.svg')",
                     maskImage: "url('/images/home/test.svg')",
                     maskSize: "cover",
@@ -45,7 +48,7 @@ const Banner = () => {
                 }}
             >
                 {/* Overlay Gelap di Wave */}
-                <div className="absolute inset-0 bg-black opacity-50 w-full"></div>
+                <div className="absolute inset-0 bg-black opacity-40 w-full"></div>
             </div>
         </div>
     );

@@ -217,7 +217,7 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                             className="relative text-white text-center px-5 h-[70vh] flex flex-col items-center justify-center"
                             style={{
                                 backgroundImage:
-                                    "url('/images/home/bannerBOD1.png')",
+                                    "url('/images/home/pasFLF3.jpg')",
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
                                 backgroundAttachment: "fixed",
@@ -225,7 +225,7 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                             }}
                         >
                             {/* Overlay Gelap */}
-                            <div className="absolute inset-0 bg-black opacity-50"></div>
+                            <div className="absolute inset-0 bg-black opacity-40"></div>
 
                             <div className="relative z-10 text-center md:text-left w-full h-full  md:items-center flex flex-col  items-center lg:justify-center justify-center space-y-5">
                                 <h1 className="text-4xl font-bold uppercase">
@@ -242,7 +242,7 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                             className="relative h-60 bg-cover bg-center w-full"
                             style={{
                                 backgroundImage:
-                                    "url('/images/home/bannerBOD1.png')",
+                                    "url('/images/home/pasFLF3.jpg')",
                                 WebkitMaskImage: "url('/images/home/test.svg')",
                                 maskImage: "url('/images/home/test.svg')",
                                 maskSize: "cover",
@@ -252,7 +252,7 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                             }}
                         >
                             {/* Overlay Gelap di Wave */}
-                            <div className="absolute inset-0 bg-black opacity-50 w-full"></div>
+                            <div className="absolute inset-0 bg-black opacity-40 w-full"></div>
                         </div>
                     </div>
                     {children}

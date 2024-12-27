@@ -15,7 +15,7 @@ const IndexEvent = ({ latestEvent, nextThreeEvents, remainingEvents }) => {
             <LayoutNavigation
                 tittle={"Event"}
                 description={
-                    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas maxime libero inventore quibusdam enim illum, vel dicta rerum perspiciatis incidunt."
+                    "Ikuti berbagai acara inspiratif untuk meningkatkan kepemimpinan, memperluas jaringan, dan mendorong inovasi bersama generasi pemimpin masa depan."
                 }
             >
                 <div className="w-full px-4 lg:flex justify-between">

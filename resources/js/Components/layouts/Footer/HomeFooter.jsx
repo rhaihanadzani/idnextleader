@@ -54,10 +54,18 @@ const HomeFooter = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="#programs"
+                                        href="/article"
                                         className="text-gray-200 hover:text-white transition-colors"
                                     >
-                                        Program
+                                        Artikel
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#event"
+                                        className="text-gray-200 hover:text-white transition-colors"
+                                    >
+                                        Acara Terselenggara
                                     </a>
                                 </li>
                                 <li>
@@ -68,29 +76,31 @@ const HomeFooter = () => {
                                         Hubungi Kami
                                     </a>
                                 </li>
-                                <li>
-                                    <a
-                                        href="#faq"
-                                        className="text-gray-200 hover:text-white transition-colors"
-                                    >
-                                        FAQ
-                                    </a>
-                                </li>
                             </ul>
                         </div>
 
                         {/* Contact Information */}
-                        <div>
+                        <div className="flex flex-col">
                             <h3 className="text-xl font-bold mb-4">Kontak</h3>
-                            <p className="text-sm text-gray-200">
-                                Email: support@idnextleader.com
-                            </p>
-                            <p className="text-sm text-gray-200">
-                                Telepon: +62 812 3456 7890
-                            </p>
-                            <p className="text-sm text-gray-200">
-                                Alamat: Jl. Inovasi No. 123, Jakarta, Indonesia
-                            </p>
+                            <a
+                                href="mailto:info@idnextleader.com"
+                                class="text-sm text-gray-200"
+                            >
+                                Email: info@idnextleader.com
+                            </a>
+
+                            <a
+                                href="https://wa.me/6282134224947"
+                                className="text-sm text-gray-200"
+                            >
+                                Whats App : +62 821-3422-4947
+                            </a>
+                            <a
+                                href="https://maps.app.goo.gl/HMadPRcgf7vFiF47A"
+                                className="text-sm text-gray-200"
+                            >
+                                Alamat : ITS Tower Lt. 3, Jakarta Selatan
+                            </a>
                         </div>
                     </div>
 
