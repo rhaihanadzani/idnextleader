@@ -64,33 +64,17 @@ const Index = ({ articles }) => {
                                         />
                                     </div>
                                     <div className="pl-2 w-[60%]">
-                                        <h2 className="text-[1rem]  pt-2 font-semibold text-gray-200 mb-2">
-                                            {article.title}
-                                        </h2>
-                                        <p className="text-gray-300 mb-4 text-[0.7rem] ">
-                                            <div
-                                                dangerouslySetInnerHTML={{
-                                                    __html: article.content.slice(
-                                                        0,
-                                                        73
-                                                    ),
-                                                }}
-                                            ></div>
+                                        <div className=" h-full flex flex-col justify-center items-center">
+                                            <h2 className="text-[1rem] text-center pt-2 font-semibold text-gray-200 mb-2">
+                                                {article.title}
+                                            </h2>
 
                                             <a
                                                 href={`/article/${article.id}`}
-                                                className="text-red-200 underline underline-offset-2 font-medium"
+                                                className="text-white w-fit font-medium text-[0.6rem] text border-2 border-white p-1 px-2 rounded-[35px] hover:bg-darkRed hover:text-white transition-all duration-500 hover:translate-x-2"
                                             >
-                                                Baca selengkapnya...
+                                                Baca selengkapnya
                                             </a>
-                                        </p>
-                                        <div className="text-[0.7rem] text-gray-200 pr-2 text-left absolute bottom-0 right-0 italic">
-                                            <span>
-                                                Dibuat Pada :{" "}
-                                                {new Date(
-                                                    article.created_at
-                                                ).toLocaleDateString()}
-                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -127,7 +111,7 @@ const ArticleItem = ({ article }) => {
                     />
                 </div>
                 <div className="pl-2 w-[60%]">
-                    <h2 className="text-[1rem]  pt-2 font-semibold text-gray-200 mb-2">
+                    {/* <h2 className="text-[1rem]  pt-2 font-semibold text-gray-200 mb-2">
                         {article.title}
                     </h2>
                     <p className="text-gray-300 mb-4 text-[0.7rem] ">
@@ -149,6 +133,18 @@ const ArticleItem = ({ article }) => {
                             Dibuat Pada :{" "}
                             {new Date(article.created_at).toLocaleDateString()}
                         </span>
+                    </div> */}
+                    <div className=" h-full flex flex-col justify-center items-center">
+                        <h2 className="text-[1rem] text-center pt-2 font-semibold text-gray-200 mb-2">
+                            {article.title}
+                        </h2>
+
+                        <a
+                            href={`/article/${article.id}`}
+                            className="text-white w-fit font-medium text-[0.6rem] text border-2 border-white p-1 px-2 rounded-[35px] hover:bg-darkRed hover:text-white transition-all duration-500 hover:translate-x-2"
+                        >
+                            Baca selengkapnya
+                        </a>
                     </div>
                 </div>
             </div>

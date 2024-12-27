@@ -69,36 +69,17 @@ const IndexEvent = ({ latestEvent, nextThreeEvents, remainingEvents }) => {
                                         />
                                     </div>
                                     <div className="w-[60%] pl-2 ">
-                                        {/* Judul Artikel */}
-                                        <h2 className="text-[1rem] pt-2 font-semibold text-gray-200 mb-2">
-                                            {event.title}
-                                        </h2>
-                                        {/* Deskripsi Artikel */}
-                                        <div className="text-gray-300 mb-4 text-[0.7rem] ">
-                                            <div
-                                                dangerouslySetInnerHTML={{
-                                                    __html: event.content.slice(
-                                                        0,
-                                                        73
-                                                    ),
-                                                }}
-                                            ></div>
+                                        <div className=" h-full flex flex-col justify-center items-center">
+                                            <h2 className="text-[1rem] text-center pt-2 font-semibold text-gray-200 mb-2">
+                                                {event.title}
+                                            </h2>
 
                                             <a
                                                 href={`/event/${event.id}`}
-                                                className="text-red-200 underline underline-offset-2 font-medium"
+                                                className="text-white w-fit font-medium text-[0.6rem] text border-2 border-white p-1 px-2 rounded-[35px] hover:bg-darkRed hover:text-white transition-all duration-500 hover:translate-x-2"
                                             >
-                                                Baca selengkapnya...
+                                                Baca selengkapnya
                                             </a>
-                                        </div>
-                                        {/* Tanggal Pembuatan Artikel */}
-                                        <div className="text-[0.7rem] text-gray-200 pr-2 text-left absolute bottom-0 right-0">
-                                            <span>
-                                                Dibuat Pada :{" "}
-                                                {new Date(
-                                                    event.created_at
-                                                ).toLocaleDateString()}
-                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -138,31 +119,17 @@ const EventItem = ({ event }) => {
                     />
                 </div>
                 <div className="w-[60%] pl-2 ">
-                    {/* Judul Artikel */}
-                    <h2 className="text-[1rem] pt-2 font-semibold text-gray-200 mb-2">
-                        {event.title}
-                    </h2>
-                    {/* Deskripsi Artikel */}
-                    <div className="text-gray-300 mb-4 text-[0.7rem] ">
-                        <div
-                            dangerouslySetInnerHTML={{
-                                __html: event.content.slice(0, 65),
-                            }}
-                        ></div>
+                    <div className=" h-full flex flex-col justify-center items-center">
+                        <h2 className="text-[1rem] text-center pt-2 font-semibold text-gray-200 mb-2">
+                            {event.title}
+                        </h2>
 
                         <a
                             href={`/event/${event.id}`}
-                            className="text-red-200 underline underline-offset-2 font-medium"
+                            className="text-white w-fit font-medium text-[0.6rem] text border-2 border-white p-1 px-2 rounded-[35px] hover:bg-darkRed hover:text-white transition-all duration-500 hover:translate-x-2"
                         >
-                            Baca selengkapnya...
+                            Baca selengkapnya
                         </a>
-                    </div>
-                    {/* Tanggal Pembuatan Artikel */}
-                    <div className="text-[0.7rem] text-gray-200 pr-2 text-left absolute bottom-0 right-0">
-                        <span>
-                            Dibuat Pada :{" "}
-                            {new Date(event.created_at).toLocaleDateString()}
-                        </span>
                     </div>
                 </div>
             </div>

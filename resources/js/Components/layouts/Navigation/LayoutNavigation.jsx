@@ -228,7 +228,7 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                             <div className="absolute inset-0 bg-black opacity-40"></div>
 
                             <div className="relative z-10 text-center md:text-left w-full h-full  md:items-center flex flex-col  items-center lg:justify-center justify-center space-y-5">
-                                <h1 className="text-4xl font-bold uppercase">
+                                <h1 className="text-4xl font-bold uppercase text-center">
                                     {tittle}
                                 </h1>
                                 <p className="max-w-3xl text-center">
