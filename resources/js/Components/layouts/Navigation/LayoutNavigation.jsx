@@ -66,16 +66,22 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                 </div>
                 <nav className="mt-4">
                     <a
-                        href="/#about"
+                        href="/"
                         className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
                     >
-                        Tentang Kami
+                        Beranda
                     </a>
                     <a
-                        href="/#event"
+                        href="/article/1"
                         className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
                     >
-                        Acara
+                        Sejarah
+                    </a>
+                    <a
+                        href="/structure"
+                        className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
+                    >
+                        Struktur
                     </a>
                     <a
                         href="/article"
@@ -167,24 +173,34 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                     />
                     <nav className="space-x-4">
                         <a
-                            href="/#about"
+                            href="/"
                             className={`${
                                 isScrolled
                                     ? "text-darkRed hover:text-darkRed/80 font-semibold"
                                     : "text-white hover:text-white/80 font-semibold"
                             }`}
                         >
-                            Tentang Kami
+                            Beranda
                         </a>
                         <a
-                            href="/#event"
+                            href="/article/1"
                             className={`${
                                 isScrolled
                                     ? "text-darkRed hover:text-darkRed/80 font-semibold"
                                     : "text-white hover:text-white/80 font-semibold"
                             }`}
                         >
-                            Acara
+                            Sejarah
+                        </a>
+                        <a
+                            href="/structure"
+                            className={`${
+                                isScrolled
+                                    ? "text-darkRed hover:text-darkRed/80 font-semibold"
+                                    : "text-white hover:text-white/80 font-semibold"
+                            }`}
+                        >
+                            Struktur
                         </a>
                         <a
                             href="/article"

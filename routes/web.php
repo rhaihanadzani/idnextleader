@@ -4,6 +4,7 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StructureController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -18,6 +19,10 @@ Route::get('/article/{id}', [ArticleController::class, 'detail']);
 // event
 Route::get('/event', [EventController::class, 'index']);
 Route::get('/event/{id}', [EventController::class, 'detail']);
+
+// structure
+Route::get('/structure', [StructureController::class, 'index']);
+
 
 
 Route::get('/dashboard', function () {

@@ -5,16 +5,16 @@ const About = () => {
             id="about"
         >
             {/* Bagian Gambar */}
-            <div className="flex-shrink-0 ">
+            <div className="flex-shrink-0 md:w-1/3 w-full">
                 <img
                     src="/images/partial/logo1.png"
                     alt="About Image"
-                    className="w-[300px] h-[150px] md:w-[350px] md:h-48 "
+                    className=""
                 />
             </div>
 
             {/* Bagian Keterangan */}
-            <div className="text-center md:text-left">
+            <div className="text-center md:text-left md:w-2/3 w-full">
                 <h2 className="text-2xl font-bold text-primary mb-4">
                     Indonesia Next Leader: Connecting Impactful Leaders
                 </h2>

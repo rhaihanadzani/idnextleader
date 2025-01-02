@@ -84,16 +84,16 @@ const HomeFooter = () => {
                             <h3 className="text-xl font-bold mb-4">Kontak</h3>
                             <a
                                 href="mailto:info@idnextleader.com"
-                                class="text-sm text-gray-200"
+                                className="text-sm text-gray-200"
                             >
                                 Email: info@idnextleader.com
                             </a>
 
                             <a
-                                href="https://wa.me/6282134224947"
+                                href="https://wa.me/6281908044668"
                                 className="text-sm text-gray-200"
                             >
-                                Whats App : +62 821-3422-4947
+                                Whats App : +62 819-0804-4668
                             </a>
                             <a
                                 href="https://maps.app.goo.gl/HMadPRcgf7vFiF47A"

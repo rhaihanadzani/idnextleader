@@ -28,7 +28,7 @@ const AcaraSection = ({ acaraItems }) => {
                                     className="w-full h-96 object-cover rounded-lg shadow-lg"
                                 />
                             )}
-                            <div class="inline-block px-4 py-2 text-sm font-bold text-white bg-primary rounded-full shadow-md uppercase tracking-wide hover:bg-primary/90 hover:scale-105 transition-all duration-300 absolute -top-5 -right-5">
+                            <div className="inline-block px-4 py-2 text-sm font-bold text-white bg-primary rounded-full shadow-md uppercase tracking-wide hover:bg-primary/90 hover:scale-105 transition-all duration-300 absolute -top-5 -right-5">
                                 New
                             </div>
                         </div>
