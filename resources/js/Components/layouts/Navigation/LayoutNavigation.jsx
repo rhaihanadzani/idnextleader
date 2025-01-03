@@ -113,20 +113,24 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                     } p-4 flex justify-between items-center md:hidden fixed w-full top-0 z-40 transition-colors duration-300`}
                 >
                     <button>
-                        <img
-                            src={"/images/partial/logo2.png"}
-                            alt="logo"
-                            width={100}
-                            height={100}
-                            className={`${isScrolled ? "hidden" : "block"}`}
-                        />
-                        <img
-                            src={"/images/partial/logo1.png"}
-                            alt="logo"
-                            width={100}
-                            height={100}
-                            className={`${isScrolled ? "block" : "hidden"}`}
-                        />
+                        <a href="/">
+                            <img
+                                src={"/images/partial/logo2.png"}
+                                alt="logo"
+                                width={100}
+                                height={100}
+                                className={`${isScrolled ? "hidden" : "block"}`}
+                            />
+                        </a>
+                        <a href="/">
+                            <img
+                                src={"/images/partial/logo1.png"}
+                                alt="logo"
+                                width={100}
+                                height={100}
+                                className={`${isScrolled ? "block" : "hidden"}`}
+                            />
+                        </a>
                     </button>
                     <button
                         onClick={toggleSidebar}
@@ -157,20 +161,28 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                         isScrolled ? "bg-white shadow-md" : "bg-transparent"
                     } hidden md:flex justify-between items-center p-4 fixed w-full top-0 z-40 transition-colors duration-300`}
                 >
-                    <img
-                        src={"/images/partial/logo2.png"}
-                        alt="logo"
-                        width={100}
-                        height={100}
+                    <a
+                        href="/"
                         className={`${isScrolled ? "hidden" : "block"}`}
-                    />
-                    <img
-                        src={"/images/partial/logo1.png"}
-                        alt="logo"
-                        width={100}
-                        height={100}
+                    >
+                        <img
+                            src={"/images/partial/logo2.png"}
+                            alt="logo"
+                            width={100}
+                            height={100}
+                        />
+                    </a>
+                    <a
+                        href="/"
                         className={`${isScrolled ? "block" : "hidden"}`}
-                    />
+                    >
+                        <img
+                            src={"/images/partial/logo1.png"}
+                            alt="logo"
+                            width={100}
+                            height={100}
+                        />
+                    </a>
                     <nav className="space-x-4">
                         <a
                             href="/"
@@ -233,7 +245,7 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                             className="relative text-white text-center px-5 h-[70vh] flex flex-col items-center justify-center"
                             style={{
                                 backgroundImage:
-                                    "url('/images/home/pasFLF3.jpg')",
+                                    "url('/images/home/merah1.jpg')",
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
                                 backgroundAttachment: "fixed",
@@ -247,8 +259,8 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                                 <h1 className="text-4xl font-bold uppercase text-center">
                                     {tittle}
                                 </h1>
-                                <p className="max-w-3xl text-center">
-                                    {description}
+                                <p className="max-w-3xl capitalize text-center">
+                                    - {description} -
                                 </p>
                             </div>
                         </div>
@@ -258,7 +270,7 @@ const LayoutNavigation = ({ children, tittle, description }) => {
                             className="relative h-60 bg-cover bg-center w-full"
                             style={{
                                 backgroundImage:
-                                    "url('/images/home/pasFLF3.jpg')",
+                                    "url('/images/home/merah1.jpg')",
                                 WebkitMaskImage: "url('/images/home/test.svg')",
                                 maskImage: "url('/images/home/test.svg')",
                                 maskSize: "cover",

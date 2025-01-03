@@ -5,7 +5,7 @@ const Banner = () => {
             <div
                 className="relative text-white text-center px-5 h-[70vh] flex flex-col items-center justify-center"
                 style={{
-                    backgroundImage: "url('/images/home/pasFLF3.jpg')",
+                    backgroundImage: "url('/images/home/merah1.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundAttachment: "fixed",
@@ -15,7 +15,7 @@ const Banner = () => {
                 {/* Overlay Gelap */}
                 <div className="absolute inset-0 bg-black opacity-40"></div>
 
-                <div className="relative z-10 text-center md:text-left w-full h-full  md:items-start flex flex-col  items-center lg:justify-end justify-center  ">
+                <div className="relative z-10 text-center  w-full h-full  flex flex-col  items-center justify-center">
                     <h1 className="text-4xl font-bold">ID Next Leader</h1>
                     <p className="mt-2 md:w-[70%] lg:w-1/2 ">
                         Jejaring pemimpin masa depan yang didirikan pada 10
@@ -38,7 +38,7 @@ const Banner = () => {
             <div
                 className="relative h-60 bg-cover bg-center w-full"
                 style={{
-                    backgroundImage: "url('/images/home/pasFLF3.jpg')",
+                    backgroundImage: "url('/images/home/merah1.jpg')",
                     WebkitMaskImage: "url('/images/home/test.svg')",
                     maskImage: "url('/images/home/test.svg')",
                     maskSize: "cover",

@@ -69,12 +69,12 @@ const TeamSection = ({ teamMembers }) => {
         <section className="py-16 bg-gradient-to-br from-dark to-darkRed">
             <div className="container mx-auto px-6">
                 <h2 className="text-2xl md:text-3xl font-extrabold text-white text-center mb-6">
-                    Our Dedicated Team
+                    Tim Kami yang Berdedikasi
                 </h2>
                 <p className="text-center text-sm md:text-base text-white mb-4 max-w-3xl mx-auto">
-                    Meet our amazing team of professionals who are passionate
-                    about what they do and dedicated to making a positive
-                    impact.
+                    Tim profesional luar biasa kami yang bersemangat dengan apa
+                    yang mereka lakukan dan berdedikasi untuk memberikan dampak
+                    positif.
                 </p>
                 <div>
                     <Swiper

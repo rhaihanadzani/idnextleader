@@ -40,16 +40,18 @@ export default function Welcome(props) {
             <Head title="Home" />
             <HomeNavbar>
                 <Banner />
-                <button
-                    onClick={toggleAudio}
-                    className="fixed bottom-4 right-4 bg-white  text-white p-3 rounded-full shadow-lg z-[9999] border border-darkRed"
-                >
-                    {isPlaying ? (
-                        <MdMusicOff size={23} className="text-darkRed" />
-                    ) : (
-                        <MdMusicNote size={23} className="text-darkRed" />
-                    )}
-                </button>
+                <div className="shadow-md bg-white shadow-darkRed w-fit p-1 fixed bottom-4 right-4 z-[9999] rounded-full ">
+                    <button
+                        onClick={toggleAudio}
+                        className=" bg-white  text-white p-3 rounded-full shadow-inner  shadow-darkRed"
+                    >
+                        {isPlaying ? (
+                            <MdMusicOff size={23} className="text-darkRed" />
+                        ) : (
+                            <MdMusicNote size={23} className="text-darkRed" />
+                        )}
+                    </button>
+                </div>
                 <About />
                 <Tujuan />
                 <NilaiSection />

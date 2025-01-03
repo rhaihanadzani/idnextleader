@@ -16,13 +16,13 @@ const HomeFooter = () => {
                 }}
             >
                 {/* Overlay Gelap di Wave */}
-                <div className="absolute inset-0 bg-black opacity-70 w-full"></div>
+                <div className="absolute inset-0 bg-black opacity-[0.5] w-full"></div>
             </div>
 
             {/* Bagian Hero Konten */}
             <div className="relative bg-darkRed text-white text-center px-5 py-5 flex flex-col items-center">
                 {/* Overlay Gelap */}
-                <div className="absolute inset-0 bg-black opacity-70"></div>
+                <div className="absolute inset-0 bg-black opacity-[0.5]"></div>
 
                 <div className="container mx-auto px-6  relative z-10">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
