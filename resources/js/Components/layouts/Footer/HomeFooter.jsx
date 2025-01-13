@@ -89,12 +89,12 @@ const HomeFooter = () => {
                                 Email: info@idnextleader.com
                             </a>
 
-                            <a
+                            {/* <a
                                 href="https://wa.me/6281908044668"
                                 className="text-sm text-gray-200"
                             >
                                 Whats App : +62 819-0804-4668
-                            </a>
+                            </a> */}
                             <a
                                 href="https://maps.app.goo.gl/HMadPRcgf7vFiF47A"
                                 className="text-sm text-gray-200"

@@ -60,7 +60,7 @@ export default function Welcome(props) {
                 <TeamSection teamMembers={props.team} />
                 <MitraKolaborator mitraList={props.collaboration} />
                 <Testimonials testimonials={props.feedback} />
-                <InviteUs />
+                {/* <InviteUs /> */}
                 <HomeFooter />
             </HomeNavbar>
         </>
