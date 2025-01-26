@@ -70,13 +70,13 @@ const IndexEvent = ({ latestEvent, nextThreeEvents, remainingEvents }) => {
                                     </div>
                                     <div className="w-[60%] pl-2 ">
                                         <div className=" h-full flex flex-col justify-center items-center">
-                                            <h2 className="text-[1rem] text-center pt-2 font-semibold text-gray-200 mb-2">
+                                            <h2 className="text-[10px] text-center pt-2 font-semibold text-gray-200 mb-2">
                                                 {event.title}
                                             </h2>
 
                                             <a
                                                 href={`/event/${event.id}`}
-                                                className="text-white w-fit font-medium text-[0.6rem] text border-2 border-white p-1 px-2 rounded-[35px] hover:bg-darkRed hover:text-white transition-all duration-500 hover:translate-x-2"
+                                                className="text-white w-fit font-medium text-[7px] text border-2 border-white p-1 px-2 rounded-[35px] hover:bg-darkRed hover:text-white transition-all duration-500 hover:translate-x-2"
                                             >
                                                 Baca selengkapnya
                                             </a>
@@ -120,13 +120,13 @@ const EventItem = ({ event }) => {
                 </div>
                 <div className="w-[60%] pl-2 ">
                     <div className=" h-full flex flex-col justify-center items-center">
-                        <h2 className="text-[1rem] text-center pt-2 font-semibold text-gray-200 mb-2">
+                        <h2 className="text-[10px] text-center pt-2 font-semibold text-gray-200 mb-2">
                             {event.title}
                         </h2>
 
                         <a
                             href={`/event/${event.id}`}
-                            className="text-white w-fit font-medium text-[0.6rem] text border-2 border-white p-1 px-2 rounded-[35px] hover:bg-darkRed hover:text-white transition-all duration-500 hover:translate-x-2"
+                            className="text-white w-fit font-medium text-[7px] text border-2 border-white p-1 px-2 rounded-[35px] hover:bg-darkRed hover:text-white transition-all duration-500 hover:translate-x-2"
                         >
                             Baca selengkapnya
                         </a>

@@ -65,13 +65,13 @@ const Index = ({ articles }) => {
                                     </div>
                                     <div className="pl-2 w-[60%]">
                                         <div className=" h-full flex flex-col justify-center items-center">
-                                            <h2 className="text-[1rem] text-center pt-2 font-semibold text-gray-200 mb-2">
+                                            <h2 className="text-[10px] text-center pt-2 font-semibold text-gray-200 mb-2">
                                                 {article.title}
                                             </h2>
 
                                             <a
                                                 href={`/article/${article.id}`}
-                                                className="text-white w-fit font-medium text-[0.6rem] text border-2 border-white p-1 px-2 rounded-[35px] hover:bg-darkRed hover:text-white transition-all duration-500 hover:translate-x-2"
+                                                className="text-white w-fit font-medium text-[7px] text border-2 border-white p-1 px-2 rounded-[35px] hover:bg-darkRed hover:text-white transition-all duration-500 hover:translate-x-2"
                                             >
                                                 Baca selengkapnya
                                             </a>
@@ -135,13 +135,13 @@ const ArticleItem = ({ article }) => {
                         </span>
                     </div> */}
                     <div className=" h-full flex flex-col justify-center items-center">
-                        <h2 className="text-[1rem] text-center pt-2 font-semibold text-gray-200 mb-2">
+                        <h2 className="text-[10px] text-center pt-2 font-semibold text-gray-200 mb-2">
                             {article.title}
                         </h2>
 
                         <a
                             href={`/article/${article.id}`}
-                            className="text-white w-fit font-medium text-[0.6rem] text border-2 border-white p-1 px-2 rounded-[35px] hover:bg-darkRed hover:text-white transition-all duration-500 hover:translate-x-2"
+                            className="text-white w-fit font-medium text-[7px] text border-2 border-white p-1 px-2 rounded-[35px] hover:bg-darkRed hover:text-white transition-all duration-500 hover:translate-x-2"
                         >
                             Baca selengkapnya
                         </a>
