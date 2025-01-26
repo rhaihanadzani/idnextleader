@@ -10,4 +10,9 @@ class Team extends Model
     use HasFactory;
     protected $table = 'teams';
     protected $guarded = [];
+
+    public function categoryTeam()
+    {
+        return $this->belongsTo(CategoryTeam::class, 'category_team_id');
+    }
 }

@@ -11,24 +11,39 @@ class StructureController extends Controller
 
     public function index()
     {
-        $founders = Team::where('position', 'like', '%founder%')->get();
-        $directions = Team::where('position', 'like', '%Foundation%')->orwhere('position', 'like', '%Chief Executive%')->get();
-        $directors = Team::where('position', 'like', '%director%')->get();
-        $badan = Team::where('position', 'like', '%Business Development Agency%')->get();
-        $duta = Team::where('position', 'like', '%ID Next Leader Ambassador%')->get();
-        $manager = Team::where('position', 'like', '%manager%')->orwhere('position', 'like', '%Senior Secretary Coordinator%')->get();
-        $officer = Team::where('position', 'like', '%Business Development Officer%')->get();
+        //Founder
+        $founders = Team::whereHas('categoryTeam', function ($query) {
+            $query->where('name', 'like', '%founder%');
+        })->get();
 
-        // dd($directions);
-        // dd($founders);
+        // Direktur
+        $directions = Team::whereHas('categoryTeam', function ($query) {
+            $query->where('name', 'like', '%direktur%');
+        })->orwhere('position', 'like', '%Chief Executive%')->orwhere('position', 'like', '%Foundation%')->get();
+
+
+        // Badan
+        $badan = Team::whereHas('categoryTeam', function ($query) {
+            $query->where('name', 'like', '%badan%');
+        })->get();
+
+        // Duta
+        $duta = Team::whereHas('categoryTeam', function ($query) {
+            $query->where('name', 'like', '%duta%');
+        })->get();
+
+        // Manager
+        $manager = Team::whereHas('categoryTeam', function ($query) {
+            $query->where('name', 'like', '%manager%');
+        })->get();
+
         return Inertia::render('Structure/Index', [
             'founders' => $founders,
             'directions' => $directions,
-            'directors' => $directors,
             'badan' => $badan,
             'duta' => $duta,
             'manager' => $manager,
-            'officer' => $officer
+
         ]);
     }
 }

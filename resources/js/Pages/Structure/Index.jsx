@@ -69,30 +69,7 @@ const Index = ({
                             </div>
                         ))}
                     </div>
-                    <h1 className="text-center text-3xl font-bold uppercase bg-gradient-to-b from-dark to-primary text-transparent bg-clip-text">
-                        Direktor
-                    </h1>
-                    <div className="grid lg:grid-cols-3 sm:grid-cols-3 place-items-center gap-5 grid-cols-2 ">
-                        {directors.map((director, i) => (
-                            <div key={i} className="">
-                                <div className="flex justify-center">
-                                    <img
-                                        src={`${url}storage/${director.image}`}
-                                        alt=""
-                                        className="lg:w-[250px] lg:h-[250px] w-[120px] h-[120px] sm:w-[170px] sm:h-[170px] rounded-full shadow-lg "
-                                    />
-                                </div>
-                                <div className="text-center mt-5">
-                                    <p className=" font-semibold text-[13px] sm:text-[15px] md:text-[16px]">
-                                        {director.name}
-                                    </p>
-                                    <p className="text-[10px] sm:text-[12px] md:text-[14px] capitalize">
-                                        {director.position}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+
                     <h1 className="text-center text-3xl font-bold uppercase bg-gradient-to-b from-dark to-primary text-transparent bg-clip-text">
                         Badan
                     </h1>
@@ -180,37 +157,6 @@ const Index = ({
                                     </p>
                                     <p className="text-[10px] sm:text-[12px] md:text-[14px] capitalize">
                                         {manager.position}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                    <h1 className="text-center text-3xl font-bold uppercase bg-gradient-to-b from-dark to-primary text-transparent bg-clip-text">
-                        Officer
-                    </h1>
-                    <div
-                        // className={`${
-                        //     officer.length >= 2
-                        //         ? "grid lg:grid-cols-3 sm:grid-cols-3 place-items-center gap-5 grid-cols-2 "
-                        //         : "flex justify-center"
-                        // } `}
-                        className="grid lg:grid-cols-3 sm:grid-cols-3 place-items-center gap-5 grid-cols-2 "
-                    >
-                        {officer.map((officer, i) => (
-                            <div key={i} className="">
-                                <div className="flex justify-center">
-                                    <img
-                                        src={`${url}storage/${officer.image}`}
-                                        alt=""
-                                        className="lg:w-[250px] lg:h-[250px] w-[120px] h-[120px] sm:w-[170px] sm:h-[170px] rounded-full shadow-lg "
-                                    />
-                                </div>
-                                <div className="text-center mt-5">
-                                    <p className=" font-semibold text-[13px] sm:text-[15px] md:text-[16px]">
-                                        {officer.name}
-                                    </p>
-                                    <p className="text-[10px] sm:text-[12px] md:text-[14px] capitalize">
-                                        {officer.position}
                                     </p>
                                 </div>
                             </div>
