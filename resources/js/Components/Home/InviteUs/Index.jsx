@@ -13,7 +13,7 @@ const InviteUs = () => {
                     Dapatkan banyak manfaat dari menyelenggarakan acara bersama!
                 </p>
                 <div className="flex justify-center">
-                    <a href="https://wa.me/6281908044668" target="_blank">
+                    <a href="mailto:info@idnextleader.com" target="_blank">
                         <div className="bg-gradient-to-br from-dark to bg-darkRed text-white border border-white px-4 py-2 rounded-full">
                             Hubungi Kami
                         </div>
