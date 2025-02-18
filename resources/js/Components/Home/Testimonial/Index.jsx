@@ -63,8 +63,9 @@ const Testimonials = ({ testimonials }) => {
                     Kata mereka untuk ID Next Leader
                 </h2>
                 <p className="text-center text-dark mb-12 max-w-3xl mx-auto">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Non unde error facere hic reiciendis illo.
+                    Cerita - cerita dari mereka yang menjadi bagian dari
+                    perjalanan ID Next Leader dalam mencetak & mengkoneksikan
+                    pemimpin masa depan.
                 </p>
                 {/* Testimonial Grid */}
 
