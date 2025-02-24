@@ -37,12 +37,18 @@ class StructureController extends Controller
             $query->where('name', 'like', '%manager%');
         })->get();
 
+        // Dewan Pembina
+        $pembina = Team::whereHas('categoryTeam', function ($query) {
+            $query->where('name', 'like', '%pembina%');
+        })->get();
+
         return Inertia::render('Structure/Index', [
             'founders' => $founders,
             'directions' => $directions,
             'badan' => $badan,
             'duta' => $duta,
             'manager' => $manager,
+            'pembina' => $pembina
 
         ]);
     }

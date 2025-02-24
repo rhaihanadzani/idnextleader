@@ -14,6 +14,7 @@ yarn-error.log*
 # Public folder (build artifacts)
 !/public/build
 /public/hot
+/public/storage
 
 # IDE and editor files
 /.idea

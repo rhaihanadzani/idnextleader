@@ -1,16 +1,8 @@
 import LayoutNavigation from "@/Components/layouts/Navigation/LayoutNavigation";
 import { Head } from "@inertiajs/react";
 
-const Index = ({
-    founders,
-    directions,
-    directors,
-    badan,
-    duta,
-    manager,
-    officer,
-}) => {
-    // console.log(officer);
+const Index = ({ founders, directions, pembina, badan, duta, manager }) => {
+    // console.log(pembina);
     const url = import.meta.env.VITE_CMS_URL;
 
     return (
@@ -40,6 +32,30 @@ const Index = ({
                                     </p>
                                     <p className="text-[10px] sm:text-[12px] md:text-[14px] capitalize">
                                         {founder.position}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <h1 className="text-center text-3xl font-bold uppercase bg-gradient-to-b from-dark to-primary text-transparent bg-clip-text">
+                        Dewan Pembina
+                    </h1>
+                    <div className="grid lg:grid-cols-3 sm:grid-cols-3 place-items-center gap-5 grid-cols-2 ">
+                        {pembina.map((pembina, i) => (
+                            <div key={i} className="">
+                                <div className="flex justify-center">
+                                    <img
+                                        src={`${url}storage/${pembina.image}`}
+                                        alt=""
+                                        className="lg:w-[250px] lg:h-[250px] w-[120px] h-[120px] sm:w-[170px] sm:h-[170px] rounded-full shadow-lg"
+                                    />
+                                </div>
+                                <div className="text-center mt-5">
+                                    <p className=" font-semibold text-[13px] sm:text-[15px] md:text-[16px]">
+                                        {pembina.name}
+                                    </p>
+                                    <p className="text-[10px] sm:text-[12px] md:text-[14px] capitalize">
+                                        {pembina.position}
                                     </p>
                                 </div>
                             </div>

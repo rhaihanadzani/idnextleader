@@ -83,10 +83,11 @@ const HomeFooter = () => {
                         <div className="flex flex-col">
                             <h3 className="text-xl font-bold mb-4">Kontak</h3>
                             <a
-                                href="mailto:info@idnextleader.com"
+                                target="_blank"
+                                href="mailto:sekretariat@idnextleader.com"
                                 className="text-sm text-gray-200"
                             >
-                                Email: info@idnextleader.com
+                                Email: sekretariat@idnextleader.com
                             </a>
 
                             {/* <a
@@ -96,6 +97,7 @@ const HomeFooter = () => {
                                 Whats App : +62 819-0804-4668
                             </a> */}
                             <a
+                                target="_blank"
                                 href="https://maps.app.goo.gl/HMadPRcgf7vFiF47A"
                                 className="text-sm text-gray-200"
                             >
