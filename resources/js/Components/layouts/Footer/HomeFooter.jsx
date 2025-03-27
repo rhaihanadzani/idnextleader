@@ -1,6 +1,33 @@
 import React from "react";
 
 const HomeFooter = () => {
+    const handleEmailClick = (useGmailWeb = false) => {
+        const email = "sekretariat@idnextleader.com";
+        const subject = "Permohonan Kolaborasi dengan IDNEXT Leader";
+        const body =
+            "Halo Tim IDNEXT Leader,\n\nSaya tertarik untuk berkolaborasi dengan Anda. Bisakah kita berdiskusi lebih lanjut tentang kemungkinan kerjasama ini?\n\nHormat saya,\n[Nama Anda]";
+
+        if (useGmailWeb) {
+            // Buka Gmail web version
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(
+                subject
+            )}&body=${encodeURIComponent(body)}`;
+            window.open(gmailUrl, "_blank", "noopener,noreferrer");
+        } else {
+            // Coba mailto default
+            const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(
+                subject
+            )}&body=${encodeURIComponent(body)}`;
+
+            // Coba buka di tab baru
+            const newWindow = window.open(mailtoUrl, "_blank");
+
+            // Fallback jika gagal
+            if (!newWindow) {
+                window.location.href = mailtoUrl;
+            }
+        }
+    };
     return (
         <div className="bg-white">
             {/* Gambar dengan Masking Wave */}
@@ -82,13 +109,12 @@ const HomeFooter = () => {
                         {/* Contact Information */}
                         <div className="flex flex-col">
                             <h3 className="text-xl font-bold mb-4">Kontak</h3>
-                            <a
-                                target="_blank"
-                                href="mailto:sekretariat@idnextleader.com"
+                            <button
+                                onClick={() => handleEmailClick(true)}
                                 className="text-sm text-gray-200"
                             >
                                 Email: sekretariat@idnextleader.com
-                            </a>
+                            </button>
 
                             {/* <a
                                 href="https://wa.me/6281908044668"
