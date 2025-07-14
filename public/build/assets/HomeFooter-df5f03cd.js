@@ -1,4 +1,4 @@
-import{j as a,a as e}from"./app-71e844b2.js";const s=()=>{const l=(o=!1)=>{const n="sekretariat@idnextleader.com",i="Permohonan Kolaborasi dengan IDNEXT Leader",r=`Halo Tim IDNEXT Leader,
+import{j as a,a as e}from"./app-7124fec3.js";const s=()=>{const l=(o=!1)=>{const n="sekretariat@idnextleader.com",i="Permohonan Kolaborasi dengan IDNEXT Leader",r=`Halo Tim IDNEXT Leader,
 
 Saya tertarik untuk berkolaborasi dengan Anda. Bisakah kita berdiskusi lebih lanjut tentang kemungkinan kerjasama ini?
 
