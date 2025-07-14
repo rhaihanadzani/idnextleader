@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use Closure;
 use Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance as Middleware;
 
 class PreventRequestsDuringMaintenance extends Middleware
@@ -14,4 +15,13 @@ class PreventRequestsDuringMaintenance extends Middleware
     protected $except = [
         //
     ];
+
+    public function handle($request, Closure $next)
+    {
+        if ($this->app->isDownForMaintenance()) {
+            return response()->view('maintenance', [], 503);
+        }
+
+        return $next($request);
+    }
 }
